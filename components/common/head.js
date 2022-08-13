@@ -15,7 +15,7 @@ export default function HeadTag({
                       <title className="tracking-wider text-lg">{title}</title>
                       <meta name="robots" content="noindex,nofollow"></meta>
                       
-                      <link rel="icon" type="image/x-icon" href="/logo.svg">
+                      <link rel="icon" type="image/x-icon" href="/logo.svg" />
 
                       <meta name="twitter:card" content="summary" />
                       <meta name="twitter:site" content="teamautoz.vercel.app" />
