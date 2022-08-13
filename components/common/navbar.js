@@ -43,12 +43,12 @@ function Logo(){
 }
 function Middle(){
   return(
-    <div className="flex text-white/80  flex-row items-center justify-center space-x-3">
-        <Link href="/"><a className="hover:text-gray-100  transition-all duration-300 ease-in-out">Latest</a></Link>
-        <Link href="/"><a className="hover:text-gray-100  transition-all duration-300 ease-in-out">About</a></Link>
-        <Link href="/"><a className="hover:text-gray-100  transition-all duration-300 ease-in-out">Sponsor</a></Link>
-        <Link href="/"><a className="hover:text-gray-100  transition-all duration-300 ease-in-out">Galary</a></Link>
-        <Link href="/"><a className="hover:text-gray-100  transition-all duration-300 ease-in-out">Contact</a></Link>
+    <div className="flex text-white/90 text-base flex-row items-center justify-center space-x-3">
+        <Link href="/"><a className="hover:text-gray-300  transition-all duration-300 ease-in-out">Latest</a></Link>
+        <Link href="/"><a className="hover:text-gray-300  transition-all duration-300 ease-in-out">About</a></Link>
+        <Link href="/"><a className="hover:text-gray-300  transition-all duration-300 ease-in-out">Sponsor</a></Link>
+        <Link href="/"><a className="hover:text-gray-300  transition-all duration-300 ease-in-out">Galary</a></Link>
+        <Link href="/"><a className="hover:text-gray-300  transition-all duration-300 ease-in-out">Contact</a></Link>
         
     </div>
   );
