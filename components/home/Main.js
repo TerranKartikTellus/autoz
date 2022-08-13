@@ -59,7 +59,7 @@ function TagLine(){
   return(
     <div className="w-[650px] text-left opacity-90 ">
       
-        Team AutoZ is a research & development team driven by undergraduate B.Tech students of VIT Vellore. The primary aim of our team is to design and develop autonomous ground vehicles and to use our innovation for practical applications of the bot to solve real-world issues, and work with companies that are keen on trying to bring automation into the market.
+        Team AutoZ is a research & development team driven by undergraduate B.Tech students of <strong className="font-bold font-sans">VIT Vellore</strong>. The primary aim of our team is to <strong className=" font-sans">design and develop autonomous ground vehicles</strong> and to use our innovation for practical applications of the bot to solve real-world issues, and work with companies that are keen on trying to bring automation into the market.
        
     </div>
   );
