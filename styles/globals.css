@@ -14,18 +14,19 @@
 ::-webkit-scrollbar-track {
 
   
-            background: #6de6e8;
+            background: transparent;
             opacity: 1;
           
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-          background: #000000;
-}
+          background: #6d8ab1;
+          opacity: 0.8;
+        }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-          background: #354749;
+          background: #6d8ab1;
           opacity: 1;
 }

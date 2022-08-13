@@ -5,8 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    
     extend: {
-      fontFamily: {
+      colors: {
+       'NewBluishBlack': '#072227',
+       'NewDarkBlue': '#35858B',
+       'NewLightlue': "#4FBDBA",
+       'NewBluishWhite': '#AEFEFF' 
+      },
+     fontFamily: {
        Maven: ["Maven Pro", "sans-serif"],
       },
     },
