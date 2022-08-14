@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export default function Main(){
   return(
-    <div className="h-screen pt-20 flex flex-row items-center justify-center space-x-2  mx-auto">  
-      <div className="flex flex-col items-start justify-center space-y-8 mx-auto">
+    <div className="h-screen pt-20 px-56 flex flex-row items-center justify-center space-x-2  mx-auto">  
+      <div className="flex bg-red-00 w-full flex-col items-start justify-center space-y-8 mx-auto">
       <div><Middle></Middle></div>
       <div><TagLine></TagLine></div>
       <div><GetStarted></GetStarted></div>
       </div>
-      <div className="mx-auto">
+      <div className="bg-red-00 w-full">
         <ImageGal></ImageGal>
       </div>
     </div>
@@ -16,7 +16,7 @@ export default function Main(){
 }
 function ImageGal(){
   return(
-    <div className="">
+    <div className="bg-red-40 pl-10">
       {/* <img src="/drone1.png" className="shadow-xl shadow-cyan-800/70 w-52 h-52 object-cover animate-pulse delay-300"></img>  
         <img src="/rover2.jpeg" className="shadow-xl shadow-cyan-800/70 w-52 h-52 object-cover animate-pulse delay-75"></img>  
         <img src="/rover1.jpeg" className="shadow-xl shadow-cyan-800/70 w-52 h-52 animate-pulse object-cover"></img>
