@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export default function Main(){
   return(
-    <div className="h-screen pt-20 flex flex-row items-center justify-center space-x-8">  
-      <div className="flex flex-col items-start justify-center space-y-8">
+    <div className="h-screen pt-20 flex flex-row items-center justify-center space-x-2  mx-auto">  
+      <div className="flex flex-col items-start justify-center space-y-8 mx-auto">
       <div><Middle></Middle></div>
       <div><TagLine></TagLine></div>
       <div><GetStarted></GetStarted></div>
       </div>
-      <div className="">
+      <div className="mx-auto">
         <ImageGal></ImageGal>
       </div>
     </div>
@@ -16,21 +16,23 @@ export default function Main(){
 }
 function ImageGal(){
   return(
-    <div className="grid grid-cols-2 gap-4 relative">
+    <div className="">
       {/* <img src="/drone1.png" className="shadow-xl shadow-cyan-800/70 w-52 h-52 object-cover animate-pulse delay-300"></img>  
         <img src="/rover2.jpeg" className="shadow-xl shadow-cyan-800/70 w-52 h-52 object-cover animate-pulse delay-75"></img>  
         <img src="/rover1.jpeg" className="shadow-xl shadow-cyan-800/70 w-52 h-52 animate-pulse object-cover"></img>
     */}
 
-        <img src="/image.webp" className="shadow-yan-800/70 w-52 h-52 ane-pulse object-cover"></img>
+        {/* <img src="/image.webp" className="shadow-yan-800/70 w-52 h-52 ane-pulse object-cover"></img> */}
    
    
         {/* <img src="/circle.webp" className="scale-50 absolute  translate-y-10 -translate-x-20 -rotate-45 shadow-yan-800/70 w-52 h-52 ane-pulse object-cover"></img> */}
    
    
-        <img src="/circle.webp" className="scale-50  absolute -translate-y-20 translate-x-32 -rotate-45 shadow-yan-800/70 w-64 h-64 ane-pulse object-cover"></img>
+        {/* <img src="/circle.webp" className=" absolute top-0 left-0 w-96 h-96 animate-spin-slow ane-pulse object-cover"></img> */}
    
-        <img src="/image.webp" className="scale-50 translate-y-10 -translate-x-20 -rotate-45 shadow-yan-800/70 w-52 h-52 ane-pulse object-cover"></img>
+        <img src="/circle.webp" className="opacity-80  w-96 h-96 animate-spin-slow ane-pulse object-cover"></img>
+   
+        {/* <img src="/image.webp" className="scale-50 translate-y-10 -translate-x-20 -rotate-45 shadow-yan-800/70 w-52 h-52 ane-pulse object-cover"></img> */}
    
    
     </div>
