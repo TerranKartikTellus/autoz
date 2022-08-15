@@ -8,7 +8,7 @@ import { useRouter } from 'next/router'
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
   console.log(router.route);
-  return <main className='font-Maven bg-gradient-to-b from-black to-black '>
+  return <main className=' font-Maven bg-gradient-to-b from-black to-black '>
     
     <div className='scale-90 rounded-full shadow-md shadow-gray-400/80 drop-shadow-2xl'>
         <div className='hden'>
