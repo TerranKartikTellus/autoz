@@ -7,6 +7,9 @@ module.exports = {
   theme: {
     
     extend: {
+      backgroundImage: {
+        'bluePrint': "url('/bluePrint.jpg')",
+      },
       animation: {
         'spin-slow': 'spin 20s linear infinite',
       },

@@ -2,15 +2,48 @@ import Link from "next/link";
 
 export default function Main(){
   return(
-    <div className="h-screen pt-20 px-56 flex flex-row items-center justify-center space-x-2  mx-auto">  
-      <div className="flex bg-red-00 w-full flex-col items-start justify-center space-y-8 mx-auto">
-      <div><Middle></Middle></div>
-      <div><TagLine></TagLine></div>
-      <div><GetStarted></GetStarted></div>
-      </div>
-      <div className="bg-red-00 w-full">
-        <ImageGal></ImageGal>
-      </div>
+    // <div className="h-screen pt-20 px-56 flex flex-row items-center justify-center space-x-2  mx-auto">  
+    //   <div className="flex bg-red-00 w-full flex-col items-start justify-center space-y-8 mx-auto">
+    //   <div><Middle></Middle></div>
+    //   <div><TagLine></TagLine></div>
+    //   <div><GetStarted></GetStarted></div>
+    //   </div>
+    //   <div className="bg-red-00 w-full">
+    //     <ImageGal></ImageGal>
+    //   </div>
+    // </div>
+    <div className="flex  flex-row items-center justify-center w-full h-full space-x">
+        {/* <div className=" flex flex-row items-center justify-center">
+        </div> */}
+        <div className="w-1/2 flex flex-col items-end   justify-center h-full">
+          <Left></Left>
+        </div>
+        <div className="w-1/2 flex flex-col items-start justify-center   h-full">
+          <Right></Right>
+        </div>
+
+
+
+        
+          {/* <div className="text-blue-800 text-sm"> by vit vellore </div> */}
+    </div>
+  );
+}
+function Left(){
+  return(
+    <div className="w-full h-full flex flex-col items-end   justify-center ">
+      <img src="/logo.svg" className="w-44 h-44"></img>
+    </div>
+  );
+}
+function Right(){
+  return(
+    <div className="w-full h-full flex flex-col items-start justify-center ">
+    <div className="text-4xl tracking-widest text-blue-800">AutoZ</div>
+    <div className="text-xl tracking-widest text-blue-800">research & development</div>
+    <div className="text-base tracking-widest text-blue-800">VIT Vellore</div>
+    
+    
     </div>
   );
 }
@@ -52,7 +85,7 @@ function News(){
 function Middle(){
   return(
     <div className="text-5xl font-medium text-left w-[650px] tracking-wider ">
-      Developing autonomous vehicles and automated systems
+      Autonomous vehicles and Automated systems
             {/* Transcribe and understand audio with a single AI-powered API */}
     </div>
   );
