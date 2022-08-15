@@ -7,7 +7,7 @@ import Contact from '/components/home/Contact'
 
 export default function Home() {
   return (
-    <div className="bg-gra text-gray-900 snap-y snap-mandatory h-screen overflow-x-hidden  select-none">
+    <div className="bg-gra rounded-sm text-gray-900  bg-gradient-to-b from-[#86afca] to-[#bed5e7]  snap-y snap-mandatory h-screen overflow-x-hidden  select-none">
      <div className='h-screen snap-center'><Main></Main></div>
      {/* <div className='h-screen snap-center'><About></About></div>
      <div className='h-screen snap-center'><Milestones></Milestones></div>

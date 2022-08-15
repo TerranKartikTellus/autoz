@@ -1,36 +1,50 @@
 import Link from "next/link";
 
-export default function nav(){
+export default function nav({route}){
   return(
     <div className="flex bg-red400 flex-row items-center justify-center fixed d bottom-0 h-[40px] bg-red-0 text-black  w-full">
-        <List></List>
+        <List route={route}></List>
     </div>
   );
 }
-function List(){
+function List({route}){
 
   return(
     <div className="bg-green500 w-3/5 flex flex-row items-center justify-evenly">
       <Link href={"/latest"}>
-        <a className="  font-sans tracking-wider  ">Latest</a></Link>
+        <a 
+        className={route=="/latest" ? "font font-sans tracking-wider  font-semibold text-2xl " : "text-lg font font-sans tracking-wide"}
+        >Latest</a></Link>
       <Link href={"/about"}>
-        <a className="  font-sans tracking-wider  ">About</a></Link>
+        <a 
+        className={route=="/about" ? "font font-sans tracking-wider  font-semibold text-2xl " : "text-lg font font-sans tracking-wide"}
+        >About</a></Link>
       <Link href={"/sponsor"}>
-        <a className="  font-sans tracking-wider  ">Sponsor</a></Link>
+        <a 
+        className={route=="/sponsor" ? "font font-sans tracking-wider  font-semibold text-2xl " : "text-lg font font-sans tracking-wide"}
+        >Sponsor</a></Link>
 
 
 
 
       <Link href={"/"}>
-        <a className="  font-sans tracking-wider  ">HOME</a></Link>
+        <a 
+        className={route=="/" ? "font font-sans tracking-wider  font-semibold text-2xl " : "text-lg font font-sans tracking-wide"}
+        >HOME</a></Link>
 
 
       <Link href={"/galary"}>
-        <a className="  font-sans tracking-wider  ">Galary</a></Link>
+        <a 
+        className={route=="/galary" ? "font font-sans tracking-wider  font-semibold text-2xl " : "text-lg font font-sans tracking-wide"}
+        >Galary</a></Link>
       <Link href={"/contact"}>
-        <a className="  font-sans tracking-wider  ">Contact</a></Link>
+        <a 
+        className={route=="/contact" ? "font font-sans tracking-wider  font-semibold text-2xl " : "text-lg font font-sans tracking-wide"}
+        >Contact</a></Link>
       <Link href={"/help"}>
-        <a className="  font-sans tracking-wider  ">Help</a></Link>
+        <a 
+        className={route=="/help" ? "font font-sans tracking-wider  font-semibold text-2xl " : "text-lg font font-sans tracking-wide"}
+        >Help</a></Link>
     </div>
   );
 }
