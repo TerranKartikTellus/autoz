@@ -12,13 +12,13 @@ export default function Main(){
     //     <ImageGal></ImageGal>
     //   </div>
     // </div>
-    <div className="flex  flex-row items-center justify-center w-full h-full space-x">
+    <div className="flex  flex-row items-center justify-center w-full h-full space-x bg-gray-950">
         {/* <div className=" flex flex-row items-center justify-center">
         </div> */}
-        <div className="w-1/2 flex flex-col items-end   justify-center h-full">
+        {/* <div className="w-1/2 flex flex-col items-end   justify-center h-full">
           <Left></Left>
-        </div>
-        <div className="w-1/2 flex flex-col items-start justify-center   h-full">
+        </div> */}
+        <div className="w-full flex flex-col items-center justify-center   h-full">
           <Right></Right>
         </div>
 
@@ -38,10 +38,10 @@ function Left(){
 }
 function Right(){
   return(
-    <div className="w-full h-full flex flex-col items-start justify-center ">
-    <div className="text-4xl tracking-widest text-blue-800">AutoZ</div>
-    <div className="text-xl tracking-widest text-blue-800">research & development</div>
-    <div className="text-base tracking-widest text-blue-800">VIT Vellore</div>
+    <div className="w-full h-full flex flex-col items-center justify-center ">
+    <div className="text-5xl tracking-widest text-blue-100 w-[300px] sm:w-[600px] text-center  bg-red300 font-semibold border-b-2 border-gray-100/30 pb-3 mb-3">AutoZ</div>
+    <div className="text-xl tracking-widest text-blue-100  text-center w-full bg-red300 font-normal">Research & Development</div>
+    <div className="text-lg tracking-widest text-blue-100  text-center w-full bg-red-300font-normal">VIT Vellore</div>
     
     
     </div>
