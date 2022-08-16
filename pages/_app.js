@@ -30,9 +30,9 @@ function MyApp({ Component, pageProps }) {
     
     <div className='scale-90 rounded-full shadowd shadow-gray-400/80 drop-shadow-2xl'>
         <div className='hden'>
-          <div></div>
-          <Nav route={router.route}></Nav></div>
+          
         <Component {...pageProps} />
+          <Nav route={router.route}></Nav></div>
     </div>  
   
   </main>
