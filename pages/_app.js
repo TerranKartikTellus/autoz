@@ -19,13 +19,13 @@ function MyApp({ Component, pageProps }) {
     <video id="myVideo" preload="auto"  className="bg-cover opacity-50 saturate-200  hidden md:block object-cover w-full h-full absolute top-0 left-0"  autoPlay loop muted >
       <source  src="/live/mylivewallpapers.com-Spaceman-with-Dog.mp4" type="video/mp4" />
       {/* <source src="movie.ogg" type="video/ogg" /> */}
-      Your browser does not support the video tag.
+      <div className='bg-backgroundLG h-full w-full bg-cover'></div>
     </video>
 
     <video id="myVideo" preload="auto" className="bg-cover opacity-50 saturate-200  block md:hidden object-cover w-full h-full absolute top-0 left-0"  autoPlay loop muted >
       <source src="/live/MOBILE-Spaceman-with-Dog.mp4" type="video/mp4" />
       {/* <source src="movie.ogg" type="video/ogg" /> */}
-      Your browser does not support the video tag.
+      <div className='bg-backgroundSM h-full w-full bg-cover'></div>
     </video>
     
     <div className='scale-90 rounded-full shadowd shadow-gray-400/80 drop-shadow-2xl'>

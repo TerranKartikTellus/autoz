@@ -15,20 +15,20 @@ function List({route}){
 
 <Link href={"/latest"}>
         <a 
-        className={route==="/latest" ? "group font font-sans relative tracking-wider  font-semibold scale-100  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/latest" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
          LATEST
           </a></Link>|
 
 <Link href={"/about"}>
         <a 
-        className={route==="/about" ? "group font font-sans relative tracking-wider  font-semibold scale-100  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/about" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           ABOUT   </a></Link>|
 
       <Link href={"/sponsor"}>
         <a 
-        className={route==="/sponsor" ? "group font font-sans relative tracking-wider  font-semibold scale-100  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/sponsor" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           SPONSOR</a></Link>|
 
@@ -47,20 +47,20 @@ function List({route}){
      
       <Link href={"/galary"}>
         <a 
-        className={route==="/galary" ? "group font font-sans relative tracking-wider  font-semibold scale-100  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/galary" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           
         GALARY</a></Link>|
 
       <Link href={"/contact"}>
         <a 
-        className={route==="/contact" ? "group font font-sans relative tracking-wider  font-semibold scale-100  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/contact" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
          CONTACT </a></Link>|
 
       <Link href={"/help"}>
         <a 
-        className={route==="/help" ? "group font font-sans relative tracking-wider  font-semibold scale-100  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/help" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
          HELP </a></Link>
     </div>

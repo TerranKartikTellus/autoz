@@ -8,7 +8,8 @@ module.exports = {
     
     extend: {
       backgroundImage: {
-        'bluePrint': "url('/bluePrint.jpg')",
+        'backgroundLG': "url('/backgroundLG.PNG')",
+        'backgroundSM': "url('/backgroundSM.PNG')",
       },
       animation: {
         'spin-slow': 'spin 20s linear infinite',
