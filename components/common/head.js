@@ -1,5 +1,5 @@
 import Head from "next/head"
-
+// <HeadTag title="" cardTitle="" description="" image="" ></HeadTag>
 export default function HeadTag({
    title = 'AutoZ',
    cardTitle = 'AutoZ',

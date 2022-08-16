@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function nav({route}){
   return(
-    <div className="flex  bg-red400 inve flex-row items-center justify-center fixed d bottom-0 h-[40px] bg-red-0 text-black  w-full pb-3">
+    <div className="flex select-none bg-red400 inve flex-row items-center justify-center fixed d bottom-0 h-[40px] bg-red-0 text-black  w-full pb-3">
         <List route={route}></List>
     </div>
   );
