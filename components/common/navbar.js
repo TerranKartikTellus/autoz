@@ -10,7 +10,7 @@ export default function nav({route}){
 function List({route}){
 
   return(
-    <div className="bg-green500 text-gray-300 w-3/5 flex flex-row items-center justify-evenly">
+    <div className="bg-green500 text-gray-100/50 w-3/5 flex flex-row items-center justify-evenly">
      
 
 <Link href={"/latest"}>
