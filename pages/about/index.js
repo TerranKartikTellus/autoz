@@ -7,20 +7,56 @@ export default function About(){
          <HeadTag title="LATEST | AutoZ" cardTitle="LATEST | AutoZ" description="LATEST | AutoZ" image="" ></HeadTag>
      <Top main={"About"} sub="AutoZ" mini={""}></Top>
      <div className="my-auto h-full ">
-      <div className="w-1/2 opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
-
-      {/* <People></People> */}
-      <Roboat></Roboat>
-      <div className="text-xs tracking-wider">Our Vision</div>
-      <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Autonomous <p>Vehicles</p>  Autonomous Systems</div>
-      <div className="text-xs">Since 2016</div>
-      </div>
-      <div className="w-1/2"></div>
+       <Part1></Part1>
+       <Part2></Part2>
      </div>
     </main>
   );
 }
 
+function Part1(){
+  return(
+    <div className="bg-red-4 h-full flex flex-row">
+      <div className="w-1/2 opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
+        <Roboat></Roboat>
+        <div className="text-xs tracking-wider">Our Eye's on</div>
+        <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Autonomous <p>Vehicles</p>  Autonomous Systems</div>
+        <div className="text-xs">Since 2016</div>
+      </div>
+      <div className="w-[1px] h-[400px] bg-gray-50/50 my-auto"></div>
+      <div className="w-1/2 ">
+          <div className="h-full w-full text-xl px- text-center my-auto bordel-2 text-gray-100/70 py-20 font-sans flex flex-col items-center justify-center ">
+            AutoZ <br></br> is a research & development team<br></br> driven by undergraduate students of VIT Vellore.<br></br> Since our infancy we are work on developing autonomous vehicles and<br></br> automated systems. Our team comprises a diverse set of people having prior experience in industrial projects. 
+          </div>
+      </div>
+    </div>
+  );
+}
+function Part2(){
+  return(
+    <div className="bg-red-4 h-full flex flex-row">
+      <div className="w-1/2 opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
+        <People></People>
+        <div className="text-xs tracking-wider">Whats makes us unique</div>
+        <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Our enthusiastically <br></br>driven Team</div>
+        <div className="text-xs">
+          29 Active
+        </div>
+      </div>
+      <div className="w-1/2 flex flex-col items-center justify-center space-y-2">
+          <div className="flex flex-row items-center justify-center space-x-2">
+            <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">Technical</div>
+            <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">Management</div>
+          </div>
+
+           <div className="flex flex-row items-center justify-center space-x-2">
+            <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">Human Resourse</div>
+            <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">More</div>
+          </div>
+      </div>
+    </div>
+  );
+}
 function People(){
   return(
     <div className="w-72 h-72 invert">
