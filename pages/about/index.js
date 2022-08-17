@@ -26,7 +26,7 @@ function Part1(){
       <div className="w-[1px] h-[400px] bg-gray-50/50 my-auto"></div>
       <div className="w-1/2 ">
           <div className="h-full w-full text-xl px- text-center my-auto bordel-2 text-gray-100/70 py-20 font-sans flex flex-col items-center justify-center ">
-            AutoZ <br></br> is a research & development team<br></br> driven by undergraduate students of VIT Vellore.<br></br> Since our infancy we are work on developing autonomous vehicles and<br></br> automated systems. Our team comprises a diverse set of people having prior experience in industrial projects. 
+            AutoZ <br></br> is a research & development team<br></br> driven by undergraduate students of VIT Vellore.<br></br> Since our infancy we are working on developing autonomous vehicles and<br></br> automated systems. Our team comprises a diverse set of people having prior experience in industrial projects. 
           </div>
       </div>
     </div>
