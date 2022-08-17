@@ -19,7 +19,7 @@ function Part1(){
     <div className="bg-red-4 h-full flex flex-row">
       <div className="w-1/2 opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
         <Roboat></Roboat>
-        <div className="text-xs tracking-wider">Our Eye's on</div>
+        <div className="text-xs tracking-wider">Our Eye&apos;s on</div>
         <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Autonomous <p>Vehicles</p>  Autonomous Systems</div>
         <div className="text-xs">Since 2016</div>
       </div>
