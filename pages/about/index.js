@@ -6,9 +6,9 @@ export default function About(){
     <main className="bg-gra  rounded-sm text-gray-100  bg-gray-900/5   snap-y snap-mandatory h-screen overflow-x-hidden  select-none">
          <HeadTag title="LATEST | AutoZ" cardTitle="LATEST | AutoZ" description="LATEST | AutoZ" image="" ></HeadTag>
      <Top main={"About"} sub="AutoZ" mini={""}></Top>
-     <div className="my-auto h-full ">
-       <Part1></Part1>
-       <Part2></Part2>
+     <div className="my-auto h-full snap-y snap-mandatory ">
+       <div className="snap-center h-full"><Part1></Part1></div>
+       <div className="snap-center h-full"><Part2></Part2></div>
      </div>
     </main>
   );
