@@ -3,21 +3,92 @@ import Top from "../../components/common/top";
 
 export default function About(){
   return(
-    <main className="bg-gra  rounded-sm text-gray-100  bg-gray-900/5   snap-y snap-mandatory h-screen overflow-x-hidden  select-none">
+    <main className="bg-gra  rounded-sm text-gray-100  md:bg-gray-900/5   snap-y snap-mandatory h-screen overflow-x-hidden  select-none">
          <HeadTag title="LATEST | AutoZ" cardTitle="LATEST | AutoZ" description="LATEST | AutoZ" image="" ></HeadTag>
-     <Top main={"About"} sub="AutoZ" mini={""}></Top>
-     <div className="my-auto h-full snap-y snap-mandatory ">
+     <Top  main={"About"} sub="AutoZ" mini={""}></Top>
+     <div className="hidden md:block my-auto h-full snap-y snap-mandatory ">
        <div className="snap-center h-full"><Part1></Part1></div>
        <div className="snap-center h-full"><Part2></Part2></div>
+     </div>
+
+     <div className="block md:hidden my-auto h-full snap-y snap-mandatory ">
+       <div className="snap-center h-full"><PartSM1></PartSM1></div>
+       <div className="snap-center h-full"><PartSM2></PartSM2></div>
+       <div className="snap-center h-full"><PartSM3></PartSM3></div>
+       <div className="snap-center h-full"><PartSM4></PartSM4></div>
      </div>
     </main>
   );
 }
 
-function Part1(){
+
+      
+
+function PartSM1(){
+  return(
+    <div className="bg-red-0 h-full flex flex-col md:flex-row pt-28 ">
+      <div className="w-full pt-10 md:w-1/2 opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
+        <Roboat></Roboat>
+        <div className="text-xs tracking-wider">Our Eye&apos;s on</div>
+        <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Autonomous <p>Vehicles</p>  Autonomous Systems</div>
+        <div className="text-xs">Since 2016</div>
+      </div>
+    </div>
+  );
+}
+function PartSM2(){
+  return(
+    <div className="bg-red-0 h-full flex flex-col md:flex-row pt-32 ">
+      <div className="w-full ">
+          <div className="h-full w-full text-lg px- text-center my-auto bordel-2 text-gray-100/70 py-20 font-sans flex flex-col items-center justify-center ">
+            Team AutoZ <br></br> is a research & development team<br></br> driven by undergraduate students of VIT Vellore. Since our infancy we are working on developing autonomous vehicles and<br></br> automated systems. Our team comprises a diverse set of people having prior experience in industrial projects. 
+          </div>
+      </div>
+    </div>
+  );
+}
+function PartSM3(){
   return(
     <div className="bg-red-4 h-full flex flex-row">
-      <div className="w-1/2 opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
+      <div className="w-full opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
+        <People></People>
+        <div className="text-xs tracking-wider">Whats makes us unique</div>
+        <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Our enthusiastically <br></br>driven Team</div>
+        <div className="text-xs">
+          29 Active Members
+        </div>
+      </div>
+      
+    </div>
+  );
+}
+
+function PartSM4(){
+  return(
+    <div className="bg-red-4 h-full flex flex-row">
+      
+      <div className="w-full  flex flex-col items-center justify-center space-y-2">
+          <div className="flex flex-row items-center justify-center space-x-2">
+            <div className="w-32 h-32 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">Technical</div>
+            <div className="w-32 h-32 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">Management</div>
+          </div>
+
+           <div className="flex flex-row items-center justify-center space-x-2">
+            <div className="w-32 h-32 text-center bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">Human Resourse</div>
+            <div className="w-32 h-32 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">More</div>
+          </div>
+      </div>
+    </div>
+  );
+}
+
+
+
+
+function Part1(){
+  return(
+    <div className="bg-red-4 h-full flex flex-col md:flex-row pt-32 ">
+      <div className="w-full pt-10 md:w-1/2 opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
         <Roboat></Roboat>
         <div className="text-xs tracking-wider">Our Eye&apos;s on</div>
         <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Autonomous <p>Vehicles</p>  Autonomous Systems</div>
@@ -40,7 +111,7 @@ function Part2(){
         <div className="text-xs tracking-wider">Whats makes us unique</div>
         <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Our enthusiastically <br></br>driven Team</div>
         <div className="text-xs">
-          29 Active
+          29 Active Members
         </div>
       </div>
       <div className="w-1/2 flex flex-col items-center justify-center space-y-2">
@@ -57,6 +128,9 @@ function Part2(){
     </div>
   );
 }
+
+
+
 function People(){
   return(
     <div className="w-72 h-72 invert">

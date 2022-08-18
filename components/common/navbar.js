@@ -6,7 +6,7 @@ export default function nav({route}){
         <div className="hidden md:block ">
         <List route={route}></List>
         </div>
-        <div className="block md:hidden ">
+        <div className="block md:hidden  ">
 
         <ListSM route={route}></ListSM>
         </div>
