@@ -8,14 +8,14 @@ export default function nav({route}){
         </div>
         <div className="block md:hidden  ">
 
-        <ListSM route={route}></ListSM>
+        <ListSM  route={route}></ListSM>
         </div>
     </div>
   );
 }
 function ListSM({route}){
   return(
-  <div>
+  <div id="navv">
      {route!='/' && <div 
         className={route==="/" ? "group font font-sans relative tracking-wider  font-semibold scale-100  text-gray-100 font-nor " : "relative opacity-90 hover:opacity-95 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
@@ -53,20 +53,20 @@ function PSMhome({route}){
      
 
 <Link href={"/latest"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/latest" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
          LATEST
           </a></Link>
 
 <Link href={"/about"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/about" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           ABOUT   </a></Link>
 
       <Link href={"/sponsor"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/sponsor" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           SPONSOR</a></Link>
@@ -85,20 +85,20 @@ function PSMhome({route}){
 
      
       <Link href={"/galary"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/galary" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           
         GALARY</a></Link>
 
       <Link href={"/contact"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/contact" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
          CONTACT </a></Link>
 
       <Link href={"/help"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/help" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
          HELP </a></Link>
@@ -111,24 +111,24 @@ function PSMhome({route}){
 function PSM({route}){
 
   return(
-    <div className="bg-green500 text-gray-100/50 w-3/5 flex flex-col items-center justify-evenly">
+    <div id="nevv" className="bg-green500 text-gray-100/50 w-3/5 flex flex-col items-center justify-evenly">
      
 
 <Link href={"/latest"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/latest" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
          LATEST
           </a></Link>
 
 <Link href={"/about"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/about" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           ABOUT   </a></Link>
 
       <Link href={"/sponsor"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/sponsor" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           SPONSOR</a></Link>
@@ -147,20 +147,20 @@ function PSM({route}){
 
      
       <Link href={"/galary"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/galary" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           
         GALARY</a></Link>
 
       <Link href={"/contact"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/contact" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
          CONTACT </a></Link>
 
       <Link href={"/help"}>
-        <a 
+        <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/help" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
          HELP </a></Link>
@@ -201,7 +201,7 @@ function List({route}){
            <img src="/logo.svg" className="w-12 h-12"></img>
             <div className="invisible group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-gray-100 font-sans tracking-widest translate-y-6">HOME</div>
           </a>
-        </Link>
+        </Link>|
 
 
      
