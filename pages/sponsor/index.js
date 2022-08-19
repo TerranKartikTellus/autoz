@@ -37,7 +37,7 @@ function Part1(){
         </div>
       
       
-      <div className="hidden mx-auto  g-red-300 md:block md:w-1/2">
+      <div className="hidden mx-auto  g-red-300 md:block md:w-1/2 opacity-75">
           <div className="  flex flex-col items-center justify-center h-full  bg-red400 px-10 mx-auto md:max-w-md">
        <div className="bg-gray-100/90 rounded p-10 my-auto ">
 
