@@ -38,8 +38,8 @@ function PartSM1(){
 }
 function PartSM2(){
   return(
-    <div className="bg-red-0 h-full flex flex-col md:flex-row pt-32 ">
-      <div className="w-full ">
+    <div className="bg-red-0 h-full flex flex-col md:flex-row pt- my-auto  ">
+      <div className="w-full  my-auto">
           <div className="h-full w-full text-lg px- text-center my-auto bordel-2 text-gray-100/70 py-20 font-sans flex flex-col items-center justify-center ">
             Team AutoZ <br></br> is a research & development team<br></br> driven by undergraduate students of VIT Vellore. Since our infancy we are working on developing autonomous vehicles and<br></br> automated systems. Our team comprises a diverse set of people having prior experience in industrial projects. 
           </div>
@@ -65,7 +65,7 @@ function PartSM3(){
 
 function PartSM4(){
   return(
-    <div className="bg-red-4 h-full flex flex-row">
+    <div className="bg-red-4 h-full flex flex-row my-auto">
       
       <div className="w-full  flex flex-col items-center justify-center space-y-2">
           <div className="flex flex-row items-center justify-center space-x-2">
