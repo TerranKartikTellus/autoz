@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SocialMedia from "../common/SocialMedia";
 
 export default function Main(){
   return(
@@ -42,6 +43,7 @@ function Right(){
     <div className="text-5xl tracking-widest text-blue-100 w-[300px] sm:w-[600px] text-center  bg-red300 font-semibold border-b-2 border-gray-100/30 pb-3 mb-3">AutoZ</div>
     <div className="text-xl tracking-widest text-blue-100  text-center w-full bg-red300 font-normal">Research & Development</div>
     <div className="text-lg tracking-widest text-blue-100  text-center w-full bg-red-300font-normal">VIT Vellore</div>
+    <div className="pt-3"><SocialMedia></SocialMedia></div>
     
     
     </div>
