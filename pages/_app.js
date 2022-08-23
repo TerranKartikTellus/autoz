@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
       {/* <source src="movie.ogg" type="video/ogg" /> */}
       <div className='bg-backgroundSM h-full  w-full bg-cover'></div>
     </video>
-    <div rel="preload" className='bg-black/40 w-full  h-full absolute top-0 left-0 animate-'>.</div>
+    <div rel="preload" className='bg-black/40 w-full   h-full absolute top-0 left-0 animate-'>.</div>
 
     <div className='scale-90 rounded-full shadowd shadow-gray-400/80 drop-shadow-2xl'>
         <div className='hden'>
