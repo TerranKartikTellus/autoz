@@ -42,17 +42,17 @@ function Part1(){
        <div className="bg-gray-100/90 rounded p-10 my-auto ">
 
        <div className="flex flex-row items-center justify-center">
-        <div className="text-center text-black text-xs "><img className="  object-cover" src="/img/sponsors/ansys.png"></img></div>
-        <div className="text-center text-black text-xs "><img className="  object-cover" src="/img/sponsors/pcb.png"></img></div>
+        <div className="text-center text-black text-xs "><img className=" contrast-150   object-cover" src="/img/sponsors/ansys.png"></img></div>
+        <div className="text-center text-black text-xs "><img className=" contrast-150   object-cover" src="/img/sponsors/pcb.png"></img></div>
        </div> 
        <div className="flex flex-row items-center justify-center">
-        <div  className="text-center text-black text-xs "><img className="  object-cover" src="/img/sponsors/port 3.png"></img></div>
-        <div  className="text-center text-black text-xs "><img className=" pb object-cover" src="/img/sponsors/port1.png"></img></div>
+        <div  className="text-center text-black text-xs "><img className=" contrast-150   object-cover" src="/img/sponsors/port 3.png"></img></div>
+        <div  className="text-center text-black text-xs "><img className=" contrast-150  pb object-cover" src="/img/sponsors/port1.png"></img></div>
        </div> 
        <div className="flex flex-row items-center justify-center">
-        <div  className="text-center text-black text-xs "><img className="  object-cover" src="/img/sponsors/TDK.png"></img> </div>
+        <div  className="text-center text-black text-xs "><img className=" contrast-150   object-cover" src="/img/sponsors/TDK.png"></img> </div>
        </div> 
-        <div  className="text-center text-black text-xs "><img className="w-full h-16  r" src="/img/sponsors/matlab.svg"></img></div>
+        <div  className="text-center text-black text-xs mt-5 mb-2 "><img className=" contrast-150 w-full h-16  r" src="/img/sponsors/matlab.svg"></img></div>
         
 
         <div className="text-center text-lg font-sans tracking-wider text-black">Since 2016</div>
