@@ -2,7 +2,13 @@ import '../styles/globals.css'
 import Nav from '../components/common/navbar'
 import { useRouter } from 'next/router'
 import Link from 'next/link';
-
+import Scale from '../components/Animate/WhenInView/Scale';
+import Opacity from '../components/Animate/WhenInView/Opacity';
+import X from '../components/Animate/WhenInView/Translate/x';
+import Y from '../components/Animate/WhenInView/Translate/y';
+import RX from '../components/Animate/WhenInView/Rotate/x';
+import RY from '../components/Animate/WhenInView/Rotate/y';
+import SKX from '../components/Animate/WhenInView/Skew/x';
 
 
 
@@ -32,7 +38,19 @@ function MyApp({ Component, pageProps }) {
     <div className='scale-90 rounded-full shadowd shadow-gray-400/80 drop-shadow-2xl'>
         <div className='hden'>
           
-        <Component {...pageProps} />
+        
+        <Scale initial={1} final={1} duration={1}>
+          <Opacity initial={0.8} final={1} duration={1}>
+            <Y initial={"100px"} final={"1px"} duration={1}>
+              <RX initial={"100deg"} final={"1deg"} duration={1}>
+               <SKX initial={35} final={1} duration={1}>
+               <Component {...pageProps} />
+               </SKX>
+              </RX>
+            </Y>
+          </Opacity>
+        </Scale>
+        
           <Nav route={router.route}></Nav></div>
     </div>  
   
