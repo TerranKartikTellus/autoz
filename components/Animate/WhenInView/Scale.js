@@ -7,12 +7,11 @@ export default function Scale({children,initial,final,delay,duration}) {
 
   const squareVariants = {
   visible: { 
-    opacity: 1, 
     scale: final, 
     transition: { duration: duration,delay:delay  } 
     
   },
-  hidden: { opacity: 0, scale: initial }
+  hidden: {  scale: initial }
   };
 
   const controls = useAnimation();

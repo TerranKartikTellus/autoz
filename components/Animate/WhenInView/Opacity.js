@@ -11,7 +11,6 @@ export default function Opacity({children,delay,initial,final,duration}) {
     transition: { duration: duration,delay:delay } 
   },
   hidden: { opacity: initial, 
-    scale: initial 
   }
   };
 

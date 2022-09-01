@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Opacity from "../Animate/WhenInView/Opacity";
 import SocialMedia from "../common/SocialMedia";
 
 export default function Main(){
@@ -40,9 +41,20 @@ function Left(){
 function Right(){
   return(
     <div className="w-full h-full flex flex-col items-center justify-center ">
-    <div className="text-5xl tracking-widest text-blue-100 w-[300px] sm:w-[600px] text-center  bg-red300 font-semibold border-b-2 border-gray-100/30 pb-3 mb-3">AutoZ</div>
+      <div>
+      <img className="w-32 h-32 invert opacity-80 mb-4" src="/svg/robot.svg"></img>  
+      </div>
+    <Opacity initial={0} final={1} duration={1}>
+    <div className="text-5xl tracking-widest text-blue-100 w-[300px] sm:w-[500px] text-center  bg-red300 font-semibold border-b-2 border-gray-100/30 pb-3 mb-3">AutoZ</div>
+    </Opacity>
+    <Opacity  initial={0} final={1} delay={0.8} duration={0.5}>
     <div className="text-xl tracking-widest text-blue-100  text-center w-full bg-red300 font-normal">Research & Development</div>
-    <div className="text-lg tracking-widest text-blue-100  text-center w-full bg-red-300font-normal">VIT Vellore</div>
+    </Opacity>
+    <Opacity initial={0} final={1} delay={1.1} duration={0.5}>
+    <div className="text-lg tracking-widest text-blue-100/90  text-center w-full bg-red-300font-normal">&apos;Autonomous Vehicles&apos;</div>
+    </Opacity>
+    {/* <div className="text-lg tracking-widest text-blue-100/80  text-center w-full bg-red-300font-normal">VIT Vellore</div> */}
+    
     <div className="pt-3"><SocialMedia></SocialMedia></div>
     
     
