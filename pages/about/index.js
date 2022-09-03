@@ -1,5 +1,9 @@
 import HeadTag from "../../components/common/head";
 import Top from "../../components/common/top";
+import  X from "/components/Animate/WhenInView/Translate/x"
+import  Y from "/components/Animate/WhenInView/Translate/y"
+import Opacity from "/components/Animate/WhenInView/Opacity"
+
 
 export default function About(){
   return(
@@ -26,8 +30,8 @@ export default function About(){
 
 function PartSM1(){
   return(
-    <div className="bg-red-0 h-full flex flex-col md:flex-row pt-28 ">
-      <div className="w-full pt-10 md:w-1/2 opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
+    <div className="bg-red-0 h-full flex flex-col md:flex-row mt-28 ">
+      <div className="w-full mt-10 md:w-1/2 opacity-70 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
         <Roboat></Roboat>
         <div className="text-xs tracking-wider">Our Eye&apos;s on</div>
         <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Autonomous <p>Vehicles</p>  Autonomous Systems</div>
@@ -87,18 +91,38 @@ function PartSM4(){
 
 function Part1(){
   return(
-    <div className="bg-red-4 h-full flex flex-col md:flex-row pt-32 ">
+    <div className="bg-red-4 h-full flex flex-col md:flex-row pt- ">
       <div className="w-full pt-10 md:w-1/2 opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
+         <Opacity initial={0} final={1} duration={1/2} delay={1.5}>
+
         <Roboat></Roboat>
+         </Opacity>
+        <Opacity initial={0} final={1} duration={1/2} delay={1.9}>
+
         <div className="text-xs tracking-wider">Our Eye&apos;s on</div>
+        </Opacity>
+        <Opacity initial={0} final={1} duration={1/2} delay={2.4}>
+
         <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Autonomous <p>Vehicles</p>  Autonomous Systems</div>
+        </Opacity>
+        <Opacity initial={0} final={1} duration={1/2} delay={2.8}>
+
         <div className="text-xs">Since 2016</div>
+        </Opacity>
       </div>
-      <div className="w-[1px] h-[400px] bg-gray-50/50 my-auto"></div>
+        
+        {/* <Opacity initial={0} final={1} duration={1/2} delay={2.3}> */}
+          <div className="w-[1px] h-[400px] bg-gray-50/50 my-auto"></div>
+        {/* </Opacity>   */}
+
       <div className="w-1/2 ">
-          <div className="h-full w-full text-xl px- text-center my-auto bordel-2 text-gray-100/70 py-20 font-sans flex flex-col items-center justify-center ">
-            AutoZ <br></br> is a research & development team<br></br> driven by undergraduate students of VIT Vellore.<br></br> Since our infancy we are working on developing autonomous vehicles and<br></br> automated systems. Our team comprises a diverse set of people having prior experience in industrial projects. 
+          {/* <Opacity className="w-full h-full" initial={0} final={1} duration={1/2} delay={2.3}> */}
+          <div className="h-full w-1/2 mx-auto text-xl px- text-center m  my-auto bordel-2 text-gray-100/70 py-20 font-sans flex flex-col items-left  justify-center ">
+            AutoZ  is a <br></br> research & development team <br></br>driven by undergraduate students of VIT Vellore. Since our infancy we are working on developing autonomous vehicles and automated systems. Our team comprises a diverse set of people having prior experience in industrial projects. 
+            {/* AutoZ <br></br> is a research & development team<br></br> driven by undergraduate students of VIT Vellore.<br></br> Since our infancy we are working on developing autonomous vehicles and<br></br> automated systems. Our team comprises a diverse set of people having prior experience in industrial projects.  */}
+          
           </div>
+          {/* </Opacity> */}
       </div>
     </div>
   );
