@@ -3,6 +3,7 @@ import Top from "../../components/common/top";
 import  X from "/components/Animate/WhenInView/Translate/x"
 import  Y from "/components/Animate/WhenInView/Translate/y"
 import Opacity from "/components/Animate/WhenInView/Opacity"
+import Scale from "/components/Animate/WhenInView/Scale"
 
 
 export default function About(){
@@ -110,15 +111,20 @@ function Part1(){
         <div className="text-xs">Since 2016</div>
         </Opacity>
       </div>
-        
-        {/* <Opacity initial={0} final={1} duration={1/2} delay={2.3}> */}
-          <div className="w-[1px] h-[400px] bg-gray-50/50 my-auto"></div>
-        {/* </Opacity>   */}
+        <div className="h-full w-auto">
+         <Opacity initial={0} final={1} duration={1/2} delay={2.3}>
+          <Y initial={"10px"} final={"0px"} duration={1} delay={2.3} >
+            <div className="w-[1px] h-[400px] mt-32 bg-gray-50/50 my-auto"></div>
+          </Y>
+         </Opacity>  
+        </div>
 
       <div className="w-1/2 ">
           {/* <Opacity className="w-full h-full" initial={0} final={1} duration={1/2} delay={2.3}> */}
           <div className="h-full w-1/2 mx-auto text-xl px- text-center m  my-auto bordel-2 text-gray-100/70 py-20 font-sans flex flex-col items-left  justify-center ">
+           <Opacity initial={0} final={1} duration={1/2} delay={2.7}>
             AutoZ  is a <br></br> research & development team <br></br>driven by undergraduate students of VIT Vellore. Since our infancy we are working on developing autonomous vehicles and automated systems. Our team comprises a diverse set of people having prior experience in industrial projects. 
+           </Opacity>
             {/* AutoZ <br></br> is a research & development team<br></br> driven by undergraduate students of VIT Vellore.<br></br> Since our infancy we are working on developing autonomous vehicles and<br></br> automated systems. Our team comprises a diverse set of people having prior experience in industrial projects.  */}
           
           </div>
@@ -131,22 +137,61 @@ function Part2(){
   return(
     <div className="bg-red-4 h-full flex flex-row">
       <div className="w-1/2 opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
-        <People></People>
+        <Opacity initial={0} final={1} duration={1/2} delay={0}>
+           <People></People>
+        </Opacity>
+        <Opacity initial={0} final={1} duration={1/2} delay={0.4}>
         <div className="text-xs tracking-wider">Whats makes us unique</div>
+        </Opacity>
+        <Opacity initial={0} final={1} duration={1/2} delay={0.8}>
         <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Our enthusiastically <br></br>driven Team</div>
+        </Opacity>
         <div className="text-xs">
+          <Opacity initial={0} final={1} duration={1/2} delay={1.3}>
           29 Active Members
+          </Opacity>
         </div>
       </div>
+      
+      <div className="h-full w-auto">
+         <Opacity initial={0} final={1} duration={1/2} delay={2.3}>
+          <Y initial={"10px"} final={"0px"} duration={1} delay={2.3} >
+            <div className="w-[1px] h-[400px] mt-32 bg-gray-50/50 my-auto"></div>
+          </Y>
+         </Opacity>  
+        </div>
+
       <div className="w-1/2 flex flex-col items-center justify-center space-y-2">
           <div className="flex flex-row items-center justify-center space-x-2">
-            <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">Technical</div>
-            <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">Management</div>
+             
+             <Opacity initial={0} final={1} duration={1/2} delay={2.5}>
+              <Scale initial={0.5} final={1} duration={1/2} delay={2.5}>
+              <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 ease-in-out">Technical</div>
+              </Scale>
+             </Opacity>
+
+             <Opacity initial={0} final={1} duration={1/2} delay={2.7}>
+              <Scale initial={0} final={1} duration={1/2} delay={2.7}>
+              <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 ease-in-out">Management</div>
+              </Scale>
+             </Opacity>
+          
           </div>
 
            <div className="flex flex-row items-center justify-center space-x-2">
-            <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">Human Resourse</div>
-            <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20">More</div>
+          
+            <Opacity initial={0} final={1} duration={1/2} delay={2.8}>
+              <Scale initial={0} final={1} duration={1/2} delay={2.7}>
+             <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 transition-all duration-400 ease-in-out">Human Resourse</div>
+              </Scale>
+            </Opacity> 
+            
+            <Opacity initial={0} final={1} duration={1/2} delay={2.6}>
+              <Scale initial={0} final={1} duration={1/2} delay={2.7}>
+             <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 transition-all duration-400 ease-in-out">More</div>
+              </Scale>
+            </Opacity>
+          
           </div>
       </div>
     </div>
