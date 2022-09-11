@@ -67,9 +67,9 @@ function Show({arr}){
           <div key={i} className="z-30 h-screen snap-center flex flex-row justify-center items-center">
             <div className="w-5/12 flex flex-col items-center justify-center">
               <div className="w-full h-full mx-auto flex flex-row items-center relative justify-center border-b-2 border-gray-50/50">
-               <img className="grayscale  transition-all duration-700 opacity-90 w-[280px] h-[280px] border-2 border-gray-50/60 object-cover rounded-full absolute -translate-x-16" src={i.img1}></img> 
-               <img className="grayscale  transition-all duration-700 opacity-90 w-[180px] h-[180px] border-2 border-gray-50 absolute translate-y-28 translate-x-20 object-cover rounded-full" src={i.img2}></img>
-               <img className="grayscale  transition-all duration-700 opacity-80 w-[200px] h-[200px] border-2 border-gray-50/80 absolute -translate-y-32 translate-x-20 object-cover rounded-full" src={i.img3}></img>
+               <img className="grayscale  transition-all duration-700 opacity-90 w-[280px] h-[280px] border2 order-gray-50/60 object-cover rounded-full absolute -translate-x-16" src={i.img1}></img> 
+               <img className="grayscale  transition-all duration-700 opacity-90 w-[180px] h-[180px] border2 order-gray-50 absolute translate-y-28 translate-x-20 object-cover rounded-full" src={i.img2}></img>
+               <img className="grayscale  transition-all duration-700 opacity-80 w-[200px] h-[200px] border2 order-gray-50/80 absolute -translate-y-32 translate-x-20 object-cover rounded-full" src={i.img3}></img>
               </div>
             </div>
             <div className="w-[100px]  h-full  flex flex-col items-center justify-center">
