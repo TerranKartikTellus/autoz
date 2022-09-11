@@ -1,21 +1,45 @@
+import Link from "next/link";
+import { useState } from "react";
+
 export default function Galary(){
   const arr =[
     {
-      img:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
+      img1:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
+      img2:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
+      img3:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
+      allImg: [
+      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
+      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
+      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
+      ],
       title:"Vikram",
       date:"16 Jan 2022",
       about:'ksdas sadsads dadasd asd sa dsadasda sd',
       description:"dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd"
     },
     {
-      img:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
+      img1:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
+      img2:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
+      img3:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
+      allImg: [
+      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
+      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
+      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
+      ],
       title:"Drake",
       date:"01 July 2021",
       about:'ksdas sadsads dadasd asd sa dsadasda sd',
       description:"dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd"
     },
      {
-      img:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",
+      img1:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
+      img2:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
+      img3:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
+      allImg: [
+      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
+      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
+      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
+      ],
       title:"Dulip",
       date:"22 Nov 2020",
       about:'ksdas sadsads dadasd asd sa dsadasda sd',
@@ -23,7 +47,8 @@ export default function Galary(){
     }
   ]  ;
   return(
-    <div className="h-screen text-gray-100">
+    <div className="h-screen text-gray-100 bg-red500 w-screen">
+        <div className="text-gray-100 bg-red-400 hidden md:block">Our most promissinng projects</div>
         <div className="hidden md:block"><Show arr={arr}></Show></div>
         <div className="md:hidden block"><ShowSm arr={arr}></ShowSm></div>
     </div>
@@ -31,17 +56,20 @@ export default function Galary(){
 }
 
 function Show({arr}){
+  const [showMore , setShoMore] = useState();
+
   return(
     <div className="text-gray-100 200/30 hidden md:block my-auto h-full snap-y snap-mandatory scroll">
       
+      <div className="z-30">
       {
         arr.map(i=>(
-          <div key={i} className="h-screen snap-center flex flex-row justify-center items-center">
+          <div key={i} className="z-30 h-screen snap-center flex flex-row justify-center items-center">
             <div className="w-5/12 flex flex-col items-center justify-center">
               <div className="w-full h-full mx-auto flex flex-row items-center relative justify-center border-b-2 border-gray-50/50">
-               <img className=" opacity-90 w-[280px] h-[280px] border-2 border-gray-50/60 object-cover rounded-full absolute -translate-x-16" src={i.img}></img> 
-               <img className=" opacity-90 w-[180px] h-[180px] border-2 border-gray-50 absolute translate-y-28 translate-x-20 object-cover rounded-full" src={i.img}></img>
-               <img className=" opacity-80 w-[200px] h-[200px] border-2 border-gray-50/80 absolute -translate-y-32 translate-x-20 object-cover rounded-full" src={i.img}></img>
+               <img className="grayscale  transition-all duration-700 opacity-90 w-[280px] h-[280px] border-2 border-gray-50/60 object-cover rounded-full absolute -translate-x-16" src={i.img1}></img> 
+               <img className="grayscale  transition-all duration-700 opacity-90 w-[180px] h-[180px] border-2 border-gray-50 absolute translate-y-28 translate-x-20 object-cover rounded-full" src={i.img2}></img>
+               <img className="grayscale  transition-all duration-700 opacity-80 w-[200px] h-[200px] border-2 border-gray-50/80 absolute -translate-y-32 translate-x-20 object-cover rounded-full" src={i.img3}></img>
               </div>
             </div>
             <div className="w-[100px]  h-full  flex flex-col items-center justify-center">
@@ -60,11 +88,22 @@ function Show({arr}){
                 <div className="opacity-60 text-xs">{i.date}</div>
                 <div className="opacity-60 text-base">{i.about}</div>
                 <div className="opacity-80 text-lg">{i.description}</div>
+                <div className="flex flex-rwo items-center justify-start">
+                  <div>
+                    <button >
+                    <a className="group flex flex-row items-center space-x-2 justify-start">
+                    <img src="/svg/camera.svg" className="invert opacity-80 w-8 h-8"></img>
+                    <div className="opacity-0 group-hover:opacity-95 translate-x-10 group-hover:translate-x-0 duration-300 transition-all ease-in-out">more</div>
+                    </a>
+                    </button>
+                  </div>
+                </div>
             </div>
             
           </div>
         ))
       }
+      </div>
     </div>
   );
 }
@@ -73,16 +112,14 @@ function Show({arr}){
 function ShowSm({arr}){
   return(
     <div className="text-gray-100 200/30  my-auto h-full snap-y snap-mandatory scroll">
-      
       {
         arr.map(i=>(
           <div key={i} className="h-screen snap-center flex flex-col justify-evenly items-center">
             <div className="text-transparent h-[40px] bg-red">.</div>
             <div className="h-auto flex flex-col items-center justify-center">
               <div className="w-full h-auto mx-auto flex flex-row items-center relative justify-center  ">
-               <img className=" opacity-90 w-[240px] h-[240px] border-2 border-gray-50/60 object-cover rounded-full " src={i.img}></img> 
-               <img className=" opacity-90 w-[140px] h-[140px] border-2 border-gray-50  object-cover rounded-full" src={i.img}></img>
-               <img className=" opacity-80 w-[160px] h-[160px] border-2 border-gray-50/80 absolute -translate-y-32 translate-x-20 object-cover rounded-full" src={i.img}></img>
+               <img className=" opacity- shadow-lg abso shadow-blue-800/20 w-[260px] h-[260px] rder-2 border-gray- object-cover rounded-full " src={i.img1}></img> 
+               {/* <img className=" opacity- shadow-lg shadow-blue-800/20 w-[160px] h-[160px] rder-2 border-gray- object-cover rounded-full" src={i.img}></img> */}
               </div>
             </div>
             {/* <div className="h-[100px]    flex flex-col items-center justify-center">
@@ -95,7 +132,7 @@ function ShowSm({arr}){
               <div className="bg-gray-100/60 w-2 h-2 scale-50 rounded-full mt-2"></div>
               
             </div> */}
-            <div className="h-auto space-y-2 pr-10 bgred-400  ">
+            <div className="h-auto space-y-2 p bgred-400  ">
               
                 <div className="text-center text-xs opacity-80 tracking-wider">{i.date}</div>
                 <div className="text-center text-5xl tracking-wider">{i.title}</div>
@@ -109,3 +146,4 @@ function ShowSm({arr}){
     </div>
   );
 }
+

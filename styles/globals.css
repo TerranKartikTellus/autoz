@@ -15,18 +15,18 @@
 
   
             background: transparent;
-            opacity: 1;
+            opacity: 0.5;
           
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
           background: #6d8ab1;
-          opacity: 0.8;
+          opacity: 0.5;
         }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
           background: #6d8ab1;
-          opacity: 1;
+          opacity: 0.5;
 }

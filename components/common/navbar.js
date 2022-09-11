@@ -108,11 +108,11 @@ function PSMhome({route}){
          CONTACT </a></Link>
 </Opacity>
   <Opacity initial={0} final={1} delay={3} duration={0.3}>  
-      <Link href={"/help"}>
+      <Link href={"/team"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
-        className={route==="/help" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 transition-all duration-300 ease-in-out hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/team" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 transition-all duration-300 ease-in-out hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
-         HELP </a></Link>
+         TEAM </a></Link>
   </Opacity>
     </div>
   );
@@ -171,11 +171,11 @@ function PSM({route}){
         >
          CONTACT </a></Link>
 
-      <Link href={"/help"}>
+      <Link href={"/team"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
-        className={route==="/help" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/team" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
-         HELP </a></Link>
+         TEAM </a></Link>
     </div>
   );
 }
@@ -233,7 +233,16 @@ function List({route}){
           </a>
         </Link>
        </Opacity>
-        
+
+        <Opacity initial={0} final={1} delay={2.2} duration={0.5}>
+      <Link href={"/team"}>
+        <a 
+        className={route==="/team" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out  group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}   >
+         TEAM
+        </a>
+      </Link>
+     </Opacity>
+     
      <Opacity initial={0} final={1} delay={2.1} duration={0.5}>  
       <Link href={"/contact"}>
         <a 
@@ -243,14 +252,7 @@ function List({route}){
       </Link>
      </Opacity>
 
-     <Opacity initial={0} final={1} delay={2.2} duration={0.5}>
-      <Link href={"/help"}>
-        <a 
-        className={route==="/help" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out  group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}   >
-         HELP 
-        </a>
-      </Link>
-     </Opacity>
+     
     </div>
   );
 }
