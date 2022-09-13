@@ -20,19 +20,15 @@ export default function Team(){
       
       <div className="w-[700px] hidden md:block fixed top-0 left-0  h-full">
         <div className=" opacity-60 flex flex-col items-center justify-center space-y-2 my-auto  h-full">
-        <Opacity initial={0} final={1} duration={1/2} delay={0}>
-           <People></People>
-        </Opacity>
-        <Opacity initial={0} final={1} duration={1/2} delay={0.4}>
+         <People></People>
+       
         <div className="text-xs tracking-wider">Whats makes us unique</div>
-        </Opacity>
-        <Opacity initial={0} final={1} duration={1/2} delay={0.8}>
+        
         <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Our enthusiastically <br></br>driven Team</div>
-        </Opacity>
+       
         <div className="text-xs">
-          <Opacity initial={0} final={1} duration={1/2} delay={1.3}>
           {board.length} Active Members
-          </Opacity>
+         
         </div>
       </div>
       </div>

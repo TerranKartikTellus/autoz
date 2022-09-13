@@ -13,14 +13,14 @@ export default function About(){
      <Top  main={"About"} sub="AutoZ" mini={""}></Top>
      <div className="hidden md:block my-auto h-full snap-y snap-mandatory ">
        <div className="snap-center h-full"><Part1></Part1></div>
-       <div className="snap-center h-full"><Part2></Part2></div>
+       {/* <div className="snap-center h-full"><Part2></Part2></div> */}
      </div>
 
      <div className="block md:hidden my-auto h-full snap-y snap-mandatory ">
        <div className="snap-center h-full"><PartSM1></PartSM1></div>
        <div className="snap-center h-full"><PartSM2></PartSM2></div>
-       <div className="snap-center h-full"><PartSM3></PartSM3></div>
-       <div className="snap-center h-full"><PartSM4></PartSM4></div>
+       {/* <div className="snap-center h-full"><PartSM3></PartSM3></div>
+       <div className="snap-center h-full"><PartSM4></PartSM4></div> */}
      </div>
     </main>
   );

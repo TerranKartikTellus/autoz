@@ -14,8 +14,8 @@ export default function Team(){
 
   return(
     <main className="bg-gra flex flex-col items-start justify-start md:justify-start md:items-start md:flex-row rounded-sm scrollbar-hide text-gray-100  bg-gray-900/5  snap-y snap-mandatory h-screen overflow-x-hidden  select-none">
-      <HeadTag title="alumni Members | AutoZ" cardTitle="alumni Members | AutoZ" description="US | AutoZ" image="" ></HeadTag>
-         <Top main={"alumni Members"} sub="AutoZ" mini={""}></Top>
+      <HeadTag title="Alumni Members | AutoZ" cardTitle="Alumni Members | AutoZ" description="US | AutoZ" image="" ></HeadTag>
+         <Top main={"Alumni Members"} sub="AutoZ" mini={""}></Top>
      {/* <div className="w-full text-center font-Maven text-2xl">alumni MEMBERS | AUTOZ</div> */}
       
       <div className="w-[700px] hidden md:block fixed top-0 left-0  h-full">
@@ -24,10 +24,10 @@ export default function Team(){
            <People></People>
         </Opacity>
         <Opacity initial={0} final={1} duration={1/2} delay={0.4}>
-        <div className="text-xs tracking-wider">Whats makes us unique</div>
+        <div className="text-xs tracking-wider">Our People</div>
         </Opacity>
         <Opacity initial={0} final={1} duration={1/2} delay={0.8}>
-        <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Our enthusiastically <br></br>driven Team</div>
+        <div className="text-2xl tracking-wider text-center border-b-2 border-gray-100/40 pb-2">Our People with <br></br>Vision Since Infancy</div>
         </Opacity>
         <div className="text-xs">
           <Opacity initial={0} final={1} duration={1/2} delay={1.3}>
