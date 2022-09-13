@@ -18,7 +18,7 @@ export default function nav({route}){
 }
 function ListSM({route}){
   return(
-  <div id="navv">
+  <div id="navv" className="">
      {route!='/' && <div 
         className={route==="/" ? "group font font-sans relative tracking-wider  font-semibold scale-100  text-gray-100 font-nor " : "relative opacity-90 hover:opacity-95 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
@@ -123,7 +123,7 @@ function PSMhome({route}){
 function PSM({route}){
 
   return(
-    <div id="nevv" className="bg-green500 text-gray-100/50 w-3/5 flex flex-col items-center justify-evenly">
+    <div id="nevv" className="bg-gradient-to-br via-blue-900/80 to-blue-600 from-blue-800 rounded-lg p-3 -translate-x-5  text-gray-100 w3/5 flex flex-col items-center justify-evenly">
      
 
 <Link href={"/latest"}>
