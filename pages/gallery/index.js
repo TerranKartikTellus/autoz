@@ -2,12 +2,12 @@ import HeadTag from "../../components/common/head";
 import Top from "../../components/common/top";
 import { galary } from "../../lib/data/galary";
 
-export default function Gallary1(){
+export default function Gallery1(){
   
   return(
     <main className="bg-gra rounded-sm text-gray-100  bg-gray900   snap-y snap-mandatory h-screen overflow-x-hidden  select-none">
-      <HeadTag title="Gallary | AutoZ" cardTitle="Gallary | AutoZ" description="Gallary | AutoZ" image="" ></HeadTag>
-      <Top main="Gallary" sub="AutoZ" mini={""}></Top>
+      <HeadTag title="Gallery | AutoZ" cardTitle="Gallery | AutoZ" description="Gallery | AutoZ" image="" ></HeadTag>
+      <Top main="Gallery" sub="AutoZ" mini={""}></Top>
       <div className="flex shrink overflow-y-auto">
       {
         galary && <div>

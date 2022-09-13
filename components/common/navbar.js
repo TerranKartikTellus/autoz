@@ -93,12 +93,12 @@ function PSMhome({route}){
         </a></Link> */}
 
        <Opacity initial={0} final={1} delay={3.6} duration={0.3}>
-      <Link href={"/gallary"}>
+      <Link href={"/gallery"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
-        className={route==="/gallary" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 transition-all duration-300 ease-in-out hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/gallery" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 transition-all duration-300 ease-in-out hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           
-        Gallary</a></Link>
+        Gallery</a></Link>
         </Opacity>
   <Opacity initial={0} final={1} delay={3.3} duration={0.3}>
       <Link href={"/contact"}>
@@ -158,12 +158,12 @@ function PSM({route}){
         </a></Link> */}
 
      
-      <Link href={"/gallary"}>
+      <Link href={"/gallery"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
-        className={route==="/gallary" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/gallery" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           
-        Gallary</a></Link>
+        GALLERY</a></Link>
 
       <Link href={"/contact"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
@@ -226,10 +226,10 @@ function List({route}){
 
 
        <Opacity initial={0} final={1} delay={2} duration={0.5}>
-        <Link href={"/gallary"}>
+        <Link href={"/gallery"}>
          <a 
-          className={route==="/gallary" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}>
-           GALLARY
+          className={route==="/gallery" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}>
+           GALLERY
           </a>
         </Link>
        </Opacity>
