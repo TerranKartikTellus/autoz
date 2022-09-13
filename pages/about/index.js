@@ -74,13 +74,13 @@ function PartSM4(){
       
       <div className="w-full  flex flex-col items-center justify-center space-y-2">
           <div className="flex flex-row items-center justify-center space-x-2">
-            <div className="w-32 h-32 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 text-center">Advisors</div>
-            <div className="w-32 h-32 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 text-center">Board Members  </div>
+            <Link href="/team/advisors"><a className="w-32 h-32 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 text-center">Advisors</a></Link>
+            <Link href="/team/board"><a className="w-32 h-32 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 text-center">Board Members  </a></Link>
           </div>
 
            <div className="flex flex-row items-center justify-center space-x-2">
-            <div className="w-32 h-32 text-center bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 ">Core Committee Members</div>
-            <div className="w-32 h-32 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 text-center">Alumni</div>
+            <Link href="/team/core"><a className="w-32 h-32 text-center bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 ">Core Committee Members</a></Link>
+            <Link href="/team/alumni"><a className="w-32 h-32 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 text-center">Alumni</a></Link>
           </div>
       </div>
     </div>
