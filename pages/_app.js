@@ -37,13 +37,13 @@ function MyApp({ Component, pageProps }) {
     </video>
     <div rel="preload" className='bg-black/40 w-full   h-full absolute top-0 left-0 animate-'>.</div>
 
-    <div className='scale-90 rounded-full shadowd bg-green400 w-full shadow-gray-400/80 drop-shadow-2xl'>
+    <div className='overflow-hidden bg-green400  shadowd bg-green400 w-full shadow-gray-400/80 drop-shadow-2xl'>
         
           
         
     
           <Opacity initial={0.8} final={1} duration={1}>
-             <Component {...pageProps} />
+            <div className='bg-red0 scale-90'> <Component {...pageProps} /></div>
           </Opacity>
             
           <Nav route={router.route}></Nav>

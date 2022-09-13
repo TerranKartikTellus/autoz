@@ -5,7 +5,7 @@ import Y from "../Animate/WhenInView/Translate/y";
 
 export default function nav({route}){
   return(
-    <div id="nav" className="flex select-none bg-red400 inve flex-row items-center justify-center fixed d bottom-0 h-[40px] bg-red-0 text-black  w-full pb-3">
+    <div id="nav" className="flex select-none bg-red400 inve flex-row items-center justify-center fixed d md:bottom-0 bottom-7 h-[40px] bg-red-0 text-black  w-full pb-3">
         <div className="hidden md:block ">
         <List route={route}></List>
         </div>

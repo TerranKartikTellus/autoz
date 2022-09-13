@@ -5,7 +5,7 @@ import  Y from "/components/Animate/WhenInView/Translate/y"
 import Opacity from "/components/Animate/WhenInView/Opacity"
 import Scale from "/components/Animate/WhenInView/Scale"
 
-
+import Link from "next/link";
 export default function About(){
   return(
     <main className="bg-gra  rounded-sm text-gray-100  md:bg-gray-900/5   snap-y snap-mandatory h-screen overflow-x-hidden  select-none">
@@ -161,18 +161,23 @@ function Part2(){
          </Opacity>  
         </div>
 
+
       <div className="w-1/2 flex flex-col items-center justify-center space-y-2">
           <div className="flex flex-row items-center justify-center space-x-2">
              
              <Opacity initial={0} final={1} duration={1/2} delay={2.5}>
               <Scale initial={0.5} final={1} duration={1/2} delay={2.5}>
-              <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 ease-in-out">Advisors </div>
+              <Link href="/team/advisors">
+              <a className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 ease-in-out">Advisors </a>
+              </Link>              
               </Scale>
              </Opacity>
 
              <Opacity initial={0} final={1} duration={1/2} delay={2.7}>
               <Scale initial={0} final={1} duration={1/2} delay={2.7}>
-              <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 ease-in-out">Board Members</div>
+              <Link href="/team/board">
+              <a className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 ease-in-out">Board Members</a>
+              </Link>
               </Scale>
              </Opacity>
           
@@ -182,13 +187,17 @@ function Part2(){
           
             <Opacity initial={0} final={1} duration={1/2} delay={2.8}>
               <Scale initial={0} final={1} duration={1/2} delay={2.7}>
-             <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 transition-all duration-400 ease-in-out text-center">Core Committee Members</div>
+                <Link href="/team/core">
+                    <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 transition-all duration-400 ease-in-out text-center">Core Committee Members</div>
+                </Link>
               </Scale>
             </Opacity> 
             
             <Opacity initial={0} final={1} duration={1/2} delay={2.6}>
               <Scale initial={0} final={1} duration={1/2} delay={2.7}>
-             <div className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 transition-all duration-400 ease-in-out">Alumni</div>
+                <Link href="/team/alumni">
+                  <a className="w-44 h-44 bg-gray-100/70 flex flex-row items-center justify-center text-gray-900 text-lg tracking-wider hover:opacity-20 transition-all duration-400 ease-in-out">Alumni</a>
+                </Link>
               </Scale>
             </Opacity>
           

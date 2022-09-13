@@ -1,4 +1,5 @@
 import Head from "next/head"
+
 // <HeadTag title="" cardTitle="" description="" image="" ></HeadTag>
 export default function HeadTag({
    title = 'AutoZ',
@@ -26,6 +27,9 @@ export default function HeadTag({
                       <meta property="og:title" content={cardTitle} />
                       <meta property="og:description" content={description} />
                       <meta property="og:image" content={image} />
+
+                     
+
                       
                     </Head>
           );

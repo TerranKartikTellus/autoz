@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     domains: ['upload.wikimedia.org','firebasestorage.googleapis.com'],
   },
+  plugins: [
+   
+],
 }
 
 module.exports = nextConfig
