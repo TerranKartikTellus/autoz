@@ -10,7 +10,7 @@ export default function Gallery1(){
       <Top main="Gallery" sub="AutoZ" mini={""}></Top>
       <div className="flex shrink overflow-y-auto">
       {
-        galary && <div>
+        galary && <div className="pb-[150px]">  
           {galary.map((i,index)=>(
             <Show key={index} arr={i}></Show>
           ))}
