@@ -4,6 +4,7 @@ import  X from "/components/Animate/WhenInView/Translate/x"
 import  Y from "/components/Animate/WhenInView/Translate/y"
 import Opacity from "/components/Animate/WhenInView/Opacity"
 import {motion} from "framer-motion"
+import Link from "next/link";
 
 export default function Sponsor(){
   return(
@@ -66,26 +67,26 @@ function Part1(){
        <div className="bg-gray-100/90 rounded p-10 my-auto ">
         <Opacity initial={0} final={1} duration={1} delay={3.5}>
         <div className="flex flex-row items-center justify-center">
-         <div className="text-center text-black text-xs "><img className=" contrast-150   object-cover" src="/img/sponsors/ansys.png"></img></div>
-         <div className="text-center text-black text-xs "><img className=" contrast-150   object-cover" src="/img/sponsors/pcb.png"></img></div>
+         <div className="text-center text-black text-xs "><Link href="https://www.ansys.com/en-in"><a><img className=" contrast-150   object-cover" src="/img/sponsors/ansys.png"></img></a></Link></div>
+         <div className="text-center text-black text-xs "><Link href="https://www.pcbpower.com/"><a><img className=" contrast-150   object-cover" src="/img/sponsors/pcb.png"></img></a></Link></div>
         </div> 
         </Opacity>
 
         <Opacity initial={0} final={1} duration={1} delay={3.7}>
         <div className="flex flex-row items-center justify-center">
-         <div  className="text-center text-black text-xs "><img className=" contrast-150   object-cover" src="/img/sponsors/port 3.png"></img></div>
-         <div  className="text-center text-black text-xs "><img className=" contrast-150  pb object-cover" src="/img/sponsors/port1.png"></img></div>
+         <div  className="text-center text-black text-xs "><Link href="https://www.solidworks.com/"><a><img className=" contrast-150   object-cover" src="/img/sponsors/port 3.png"></img></a></Link></div>
+         <div  className="text-center text-black text-xs "><Link href="https://www.xsens.com/"><a><img className=" contrast-150  pb object-cover" src="/img/sponsors/port1.png"></img></a></Link></div>
         </div> 
         </Opacity>
 
         <Opacity initial={0} final={1} duration={1} delay={3.9}>
 
         <div className="flex flex-row items-center justify-center">
-         <div  className="text-center text-black text-xs "><img className=" contrast-150   object-cover" src="/img/sponsors/TDK.png"></img> </div>
+         <div  className="text-center text-black text-xs "><Link href="https://www.tdk.com/en/index.html"><a><img className=" contrast-150   object-cover" src="/img/sponsors/TDK.png"></img></a></Link> </div>
         </div> 
         </Opacity>
          <Opacity initial={0} final={1} duration={1} delay={4.1}>
-         <div  className="text-center text-black text-xs mt-5 mb-2 "><img className=" contrast-150 w-full h-16  r" src="/img/sponsors/matlab.svg"></img></div>
+         <div  className="text-center text-black text-xs mt-5 mb-2 "><Link href="https://www.mathworks.com/"><a><img className=" contrast-150 w-full h-16  r" src="/img/sponsors/matlab.svg"></img></a></Link></div>
          </Opacity>
         
 
