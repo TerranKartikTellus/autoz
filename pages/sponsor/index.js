@@ -3,6 +3,7 @@ import Top from "../../components/common/top";
 import  X from "/components/Animate/WhenInView/Translate/x"
 import  Y from "/components/Animate/WhenInView/Translate/y"
 import Opacity from "/components/Animate/WhenInView/Opacity"
+import {motion} from "framer-motion"
 
 export default function Sponsor(){
   return(
@@ -11,7 +12,7 @@ export default function Sponsor(){
          <Top main={"Sponsor"} sub="AutoZ" mini={""}></Top>
 
          <div className="block md:hidden my-auto h-full snap-y snap-mandatory ">
-           <div className="snap-center h-full"><Part1></Part1></div>
+           <motion.div layoutId='layout2' className="snap-center h-full"><Part1></Part1></motion.div>
            <div className="snap-center h-full"><Part2></Part2></div>
          </div>
 

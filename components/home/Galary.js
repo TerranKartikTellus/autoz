@@ -134,7 +134,7 @@ function ShowSm({arr}){
             <div className="text-transparent h-[40px] bg-red">.</div>
             <div className="h-auto flex flex-col items-center justify-center">
               <div className="w-full h-auto mx-auto flex flex-row items-center relative justify-center  ">
-               <img className=" opacity- shadow-lg abso shadow-blue-800/20 w-[260px] h-[260px] rder-2 border-gray- object-cover rounded-full " src={i.img1}></img> 
+               <img className="grayscale hover:grayscale-0 transition-all duration-500 ease-in-out opacity- shadow-lg abso shadow-blue-800/20 w-[260px] h-[260px] rder-2 border-gray- object-cover rounded-full " src={i.img1}></img> 
                {/* <img className=" opacity- shadow-lg shadow-blue-800/20 w-[160px] h-[160px] rder-2 border-gray- object-cover rounded-full" src={i.img}></img> */}
               </div>
             </div>

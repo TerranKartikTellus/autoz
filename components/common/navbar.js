@@ -165,17 +165,18 @@ function PSM({route}){
           
         GALLERY</a></Link>
 
+<Link href={"/team"}>
+        <a onClick={()=>{document.getElementById("navv").blur();}}
+        className={route==="/team" ? "group font font-sans relative tracking-wider text-gray-900 font-semi scale-95 opacity-100 font-semibold text-gra100 font-nor " : " text-gray-900 relative opacity-90 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-b00 font-normal  font font-sans tracking-wide"}
+        >
+         TEAM </a></Link>
       <Link href={"/contact"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
         className={route==="/contact" ? "group font font-sans relative tracking-wider text-gray-900 font-semi scale-95 opacity-100 font-semibold text-gray00 font-nor " : " text-gray-900 relative opacity-90 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-bl0 font-normal  font font-sans tracking-wide"}
         >
          CONTACT </a></Link>
 
-      <Link href={"/team"}>
-        <a onClick={()=>{document.getElementById("navv").blur();}}
-        className={route==="/team" ? "group font font-sans relative tracking-wider text-gray-900 font-semi scale-95 opacity-100 font-semibold text-gra100 font-nor " : " text-gray-900 relative opacity-90 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-b00 font-normal  font font-sans tracking-wide"}
-        >
-         TEAM </a></Link>
+      
     </div>
   );
 }
@@ -216,8 +217,8 @@ function List({route}){
         <Opacity initial={0} final={1} delay={1.5} duration={0.5}>
         <Link href="/">
           <a className="group">
-           <img src="/logo.svg" className="w-12 h-12 transition-all duration-300 ease-in-out contrast-200 hover:contrast-150"></img>
-            <div className="invisible group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-gray-100 font-sans tracking-widest translate-y-6">HOME</div>
+            <div className="invisible group-hover:visible  group-hover:-translate-y-4 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 text-gray-100 font-sans tracking-widest translate-y-6">HOME</div>
+           <img src="/logo.svg" className="scale-90 -translate-y-5 w-12 h-12 transition-all duration-300 ease-in-out contrast-200 hover:contrast-150"></img>
           </a>
         </Link>
         </Opacity>
