@@ -1,76 +1,18 @@
 import Link from "next/link";
 import { useState } from "react";
-
+import { projects } from "../../lib/data/projects";
 export default function Galary(){
-  const arr =[
-    {
-      img1:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
-      img2:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
-      img3:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
-      allImg: [
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
-      ],
-      title:"Pratham",
-      date:"16 Jan 2022",
-      about:'ksdas sadsads dadasd asd sa dsadasda sd',
-      description:"dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd"
-    },
-    {
-      img1:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
-      img2:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
-      img3:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
-      allImg: [
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
-      ],
-      title:"L3",
-      date:"01 July 2021",
-      about:'ksdas sadsads dadasd asd sa dsadasda sd',
-      description:"dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd"
-    },
-     {
-      img1:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
-      img2:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
-      img3:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
-      allImg: [
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
-      ],
-      title:"Drone",
-      date:"22 Nov 2020",
-      about:'ksdas sadsads dadasd asd sa dsadasda sd',
-      description:"dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd"
-    },
-       {
-      img1:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
-      img2:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
-      img3:"https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
-      allImg: [
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F02.jpeg?alt=media&token=0589d3f3-9287-48ed-8db4-852aed0eae3f",
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F01.jpeg?alt=media&token=710c44fb-af29-4af3-96d0-d16e2008ea9a",
-      "https://firebasestorage.googleapis.com/v0/b/autoz-8611b.appspot.com/o/galary%2F03.jpeg?alt=media&token=96fbda7e-14a3-4745-aa6e-f24fea35506b",   
-      ],
-      title:"Research",
-      date:"22 Nov 2020",
-      about:'ksdas sadsads dadasd asd sa dsadasda sd',
-      description:"dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd dadasd asd asdasd asda sdasdas das dasdasdasd asdasdasd asd asd asdasd as dadas dasdasdas dasdas da sd asd"
-    }
-
-  ]  ;
+  
   return(
     <div className="h-screen text-gray-100 bg-red500 w-screen">
         <div className="text-gray-100 bg-red-400 hidden md:block">Our most promissinng projects</div>
-        <div className="hidden md:block"><Show arr={arr}></Show></div>
-        <div className="md:hidden block"><ShowSm arr={arr}></ShowSm></div>
+        <div className="hidden md:block"><Show projects={projects}></Show></div>
+        <div className="md:hidden block"><ShowSm projects={projects}></ShowSm></div>
     </div>
   );
 }
 
-function Show({arr}){
+function Show({projects}){
   const [showMore , setShoMore] = useState();
 
   return(
@@ -78,7 +20,7 @@ function Show({arr}){
       {/* <div className="w-1/2"></div> */}
       <div className="z-30 ">
       {
-        arr.map(i=>(
+        projects.map(i=>(
           <div key={i} className="z-30 h-screen snap-center flex flex-row justify-center items-center">
             <div className="w-5/12 flex flex-col items-center justify-center">
               <div className="w-full h-full mx-auto flex flex-row items-center relative justify-center border-b-2 border-gray-50/50">
@@ -125,11 +67,11 @@ function Show({arr}){
 }
 
 
-function ShowSm({arr}){
+function ShowSm({projects}){
   return(
     <div className="text-gray-100 200/30  my-auto h-full snap-y snap-mandatory scroll">
       {
-        arr.map(i=>(
+        projects.map(i=>(
           <div key={i} className="h-screen snap-center flex flex-col justify-evenly items-center">
             <div className="text-transparent h-[40px] bg-red">.</div>
             <div className="h-auto flex flex-col items-center justify-center">

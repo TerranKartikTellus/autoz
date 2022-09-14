@@ -4,7 +4,7 @@ import  X from "/components/Animate/WhenInView/Translate/x"
 import  Y from "/components/Animate/WhenInView/Translate/y"
 import Opacity from "/components/Animate/WhenInView/Opacity"
 import Scale from "/components/Animate/WhenInView/Scale"
-
+import { projects } from "../../lib/data/projects";
 import Link from "next/link";
 export default function About(){
   return(
@@ -13,6 +13,7 @@ export default function About(){
      <Top  main={"About"} sub="AutoZ" mini={""}></Top>
      <div className="hidden md:block my-auto h-full snap-y snap-mandatory ">
        <div className="snap-center h-full"><Part1></Part1></div>
+       
        {/* <div className="snap-center h-full"><Part2></Part2></div> */}
      </div>
 
@@ -26,7 +27,24 @@ export default function About(){
   );
 }
 
-
+function ProjectList({projects}){
+  return(
+    <div className="bg-green500 w-full bordert-2 border-gray-100/70 pt-5  text-gry-700 mt-3 text-xs font-sans text- bg-red400   trackin">
+      <Opacity initial={0} final={1} duration={1/2} delay={2.5}>
+    
+        { projects.map(i=>( 
+          
+          <Link key={i} href="/latest"><a>
+            
+            <p  className="inline-block py-1 px-2 m-1 hover:bg-gray-100/20 tracking  text-gray-100 text-base bg-gray-100/10 rounded-sm ">{i.title}</p> 
+          </a></Link>
+        
+        )) }
+        <div className="mb-3 text-base">Our ambitious projects</div>
+      </Opacity>
+     </div> 
+  );
+}
       
 
 function PartSM1(){
@@ -126,7 +144,7 @@ function Part1(){
             AutoZ  is a <br></br> research & development team <br></br>driven by undergraduate students of VIT Vellore. Since our infancy we are working on developing autonomous vehicles and automated systems. Our team comprises a diverse set of people having prior experience in industrial projects. 
            </Opacity>
             {/* AutoZ <br></br> is a research & development team<br></br> driven by undergraduate students of VIT Vellore.<br></br> Since our infancy we are working on developing autonomous vehicles and<br></br> automated systems. Our team comprises a diverse set of people having prior experience in industrial projects.  */}
-          
+            <div><ProjectList projects={projects}></ProjectList></div>
           </div>
           {/* </Opacity> */}
       </div>
