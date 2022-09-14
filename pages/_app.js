@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import Opacity from '../components/Animate/WhenInView/Opacity';
 import {useState} from "react"
 import nextRouter from 'next/router';
+import Y from '../components/Animate/WhenInView/Translate/y';
 
 
 function MyApp({ Component, pageProps }) {
@@ -42,7 +43,10 @@ function MyApp({ Component, pageProps }) {
           {!loading && <Opacity initial={0.8} final={1} duration={1}>
             <div className='bg-red0 scale-90'>
               <Opacity initial={ 0 } final={ 1 } duration={1} delay={0}>
+                <Y initial={ "100px" } final={ "0px" } duration={0.8} delay={0}>
+
                <Component {...pageProps} />
+                </Y>
               </Opacity>
             </div>
           </Opacity>
