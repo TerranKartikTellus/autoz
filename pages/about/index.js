@@ -40,7 +40,7 @@ function ProjectList({projects}){
           </a></Link>
         
         )) }
-        <div className="mb-3 text-base">Our ambitious projects</div>
+        <div className="mb-3 text-base">Our most ambitious projects</div>
       </Opacity>
      </div> 
   );
