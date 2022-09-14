@@ -9,7 +9,7 @@ export default function nav({route}){
         <div className="hidden md:block ">
         <List route={route}></List>
         </div>
-        <div className="block md:hidden  ">
+        <div className="block md:hidden ">
 
         <ListSM  route={route}></ListSM>
         </div>
@@ -18,22 +18,22 @@ export default function nav({route}){
 }
 function ListSM({route}){
   return(
-  <div id="navv" className="">
+  <div id="navv" className="w-full ">
      {route!='/' && <div 
-        className={route==="/" ? "group font font-sans relative tracking-wider  font-semibold scale-100  text-gray-100 font-nor " : "relative opacity-90 hover:opacity-95 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/" ? "group font font-sans relative tracking-wider bg-green-500  font-semibold scale-100  text-gray-100 font-nor " : " relative opacity-90 hover:opacity-95 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
              <img src="/logo.svg" className="w-12 h-12"></img>
              <div className="group-hover:visible invisible opacity-0 group-hover:opacity-95  -bottom-7 group-hover:translate-y-0 translate-y-3 transition-all duration-300 ease-in-out left-0 absolute">
                 <Link href="/"><a onClick={()=>{document.getElementById("nav").focus(); }}>HOME</a></Link>
              </div>
-             <div className="group-hover:visible invisible opacity-0 group-hover:opacity-95 bg-gray-1  -bottom-7 group-hover:-translate-y-20 -translate-y-44 transition-all duration-300 ease-in-out left-0 absolute">
+             <div className="group-hover:visible invisible opacity-0 group-hover:opacity-100 bg-gray-1  -bottom-7 group-hover:-translate-y-20 -translate-y-44 transition-all duration-300 ease-in-out  fixed right-0 translate-x-[45px] bg-red400 h-[180px] w-[130px]">
               <PSM route={route}></PSM>
              </div>
               
     </div>}
 
     {route=='/' && <div 
-        className={route==="/" ? "group font font-sans relative tracking-wider  font-semibold scale-100  text-gray-100 font-nor " : "relative opacity-90 hover:opacity-95 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/" ? "group font font-sans relative tracking-wider   font-semibold scale-100  text-gray-100 font-nor " : "relative opacity-90 hover:opacity-95 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
             <Opacity initial={0} final={1} delay={2.3} duration={0.3}>
              <img src="/logo.svg" className="w-12 h-12 contrast-200"></img>
@@ -98,7 +98,7 @@ function PSMhome({route}){
         className={route==="/gallery" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 transition-all duration-300 ease-in-out hover:opacity-80 group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
         >
           
-        Gallery</a></Link>
+        GALLERY</a></Link>
         </Opacity>
   <Opacity initial={0} final={1} delay={3.3} duration={0.3}>
       <Link href={"/contact"}>
@@ -123,25 +123,25 @@ function PSMhome({route}){
 function PSM({route}){
 
   return(
-    <div id="nevv" className="bg-gradient-to-br via-blue-900/80 to-blue-600 from-blue-800 rounded-lg p-3 -translate-x-5  text-gray-100 w3/5 flex flex-col items-center justify-evenly">
+    <div id="nevv" className="backdrop-blur-sm bg-white shadow-xl shadow-slate-200/20 drop-shadow-2xl rounded-lg p-3   text-gray-900 w-full mx-auto flex flex-col items-center justify-evenly">
      
 
 <Link href={"/latest"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
-        className={route==="/latest" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/latest" ? "group font font-sans relative tracking-wider  text-gray-900  font-semi scale-95 opacity-100 font-semibold  font-nor " : "relative opacity-90 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-gray-900 text-blu0 font-normal  font font-sans tracking-wide"}
         >
          LATEST
           </a></Link>
 
 <Link href={"/about"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
-        className={route==="/about" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/about" ? "group font font-sans relative tracking-wider  text-gray-900  font-semi scale-95 opacity-100 font-semibold  font-nor " : "relative opacity-90 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-gray-900 text-blue0 font-normal  font font-sans tracking-wide"}
         >
           ABOUT   </a></Link>
 
       <Link href={"/sponsor"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
-        className={route==="/sponsor" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/sponsor" ? "group font font-sans relative tracking-wider  text-gray-900  font-semi scale-95 opacity-100 font-semibold  font-nor " : "relative opacity-90 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-gray-900 text-blu0 font-normal  font font-sans tracking-wide"}
         >
           SPONSOR</a></Link>
 
@@ -160,20 +160,20 @@ function PSM({route}){
      
       <Link href={"/gallery"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
-        className={route==="/gallery" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/gallery" ? "group font font-sans relative tracking-wider text-gray-900 font-semi scale-95 opacity-100 font-semibold text-gra font-nor " : " text-gray-900 relative opacity-90 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text- font-normal  font font-sans tracking-wide"}
         >
           
         GALLERY</a></Link>
 
       <Link href={"/contact"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
-        className={route==="/contact" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/contact" ? "group font font-sans relative tracking-wider text-gray-900 font-semi scale-95 opacity-100 font-semibold text-gray00 font-nor " : " text-gray-900 relative opacity-90 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-bl0 font-normal  font font-sans tracking-wide"}
         >
          CONTACT </a></Link>
 
       <Link href={"/team"}>
         <a onClick={()=>{document.getElementById("navv").blur();}}
-        className={route==="/team" ? "group font font-sans relative tracking-wider  font-semi scale-95 opacity-80  text-gray-100 font-nor " : "relative opacity-50 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-blue-100 font-normal  font font-sans tracking-wide"}
+        className={route==="/team" ? "group font font-sans relative tracking-wider text-gray-900 font-semi scale-95 opacity-100 font-semibold text-gra100 font-nor " : " text-gray-900 relative opacity-90 hover:opacity-80 transition-all duration-300 ease-in-out group scale-95 text-b00 font-normal  font font-sans tracking-wide"}
         >
          TEAM </a></Link>
     </div>
